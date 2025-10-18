@@ -13,14 +13,14 @@ client = openai.OpenAI()
 st.title("Hello, GenAI!")
 st.write("This is your first Streamlit app.")
 
-response = client.responses.create(
+response = client.chat.completions.create(
     model="gpt-4o",
-    input=[
+    messages=[
         {"role": "user", "content": "Explain generative AI in one sentence."}  # Prompt
     ],
     temperature=0.7,  # A bit of creativity
-    max_output_tokens=100  # Limit response length
+    max_tokens=100  # Limit response length
 )
 
 # print the response from OpenAI
-st.write(response.output[0].content[0].text)
+st.write(response.choices[0].message.content)
