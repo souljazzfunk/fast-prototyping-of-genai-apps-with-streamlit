@@ -41,10 +41,10 @@ st.set_page_config(
 st.markdown("""
     <meta property="og:title" content="GenAI Data Processing App" />
     <meta property="og:description" content="AI-powered customer reviews sentiment analysis" />
-    <meta property="og:image" content="https://your-image-url.com/preview.png" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/souljazzfunk/fast-prototyping-of-genai-apps-with-streamlit/refs/heads/main/chart-viz-og.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://your-image-url.com/preview.png" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/souljazzfunk/fast-prototyping-of-genai-apps-with-streamlit/refs/heads/main/chart-viz-og.png" />
 """, unsafe_allow_html=True)
 
 st.title("Hello, GenAI!")
